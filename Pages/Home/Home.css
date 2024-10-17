@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: poppins;
+}
+body {
+	overflow-y: auto;
+	background-color: #fff7d1;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: rgb(6, 72, 6);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header img {
+	width: 12rem;
+	height: 3rem;
+}
+.option {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+}
+li {
+	font-family: poppins;
+	list-style: none;
+	cursor: pointer;
+}
+header a {
+	display: flex;
+	color: white;
+	text-decoration-line: none;
+	align-items: center;
+	padding-right: 2rem;
+}
+header a:hover {
+	color: rgb(39, 208, 39);
+}
+main .first {
+	width: 100%;
+	height: 100%;
+	margin-top: 4rem;
+	background-image: url(https://cdn.pixabay.com/photo/2018/04/20/22/18/factory-3337207_1280.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.first_content h1 {
+	font-size: 70px;
+	line-height: 1;
+	text-align: center;
+	font-family: "Ubuntu", sans-serif;
+	color: orangered;
+}
+.first_content img {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+}
+.first_content h2 {
+	color: orangered;
+	font-size: 32px;
+	text-align: center;
+	width: 100%;
+}
+.first_content p {
+	color: white;
+	font-size: 24px;
+	color: white;
+	font-weight: 700;
+	width: 80%;
+	text-align: center;
+}
+.heavy_duty {
+	padding: 5rem 0rem;
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.heavy_duty_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.heavy_duty_img {
+	height: 300px;
+	width: 300px;
+}
+.heavy_duty_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 2rem;
+}
+.about {
+	display: flex;
+	flex-direction: row;
+}
+.about div {
+	flex: 1;
+	/* padding: 3rem; */
+}
+.about_one {
+	text-align: center;
+	margin: 2rem 1rem;
+	background-color: rgba(0, 0, 0, 0.509);
+}
+.about_second {
+	padding: 3rem 0rem;
+}
+.about h1 {
+	font-size: 80px;
+}
+.about a {
+	text-decoration: none;
+	font-size: 28px;
+	color: rgb(255, 255, 255);
+}
+.about p {
+	font-size: 18px;
+	line-height: 2;
+}
+.about p > span {
+	color: orangered;
+	font-size: 30px;
+}
+.gallery {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 600px;
+	padding: 3rem 2rem;
+	align-items: center;
+}
+.gallery_img {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	justify-content: space-around;
+	padding: 3rem 2rem;
+	height: 100%;
+
+	width: 100%;
+}
+.gallery_img div {
+	flex: 1;
+	background-position: center;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+	font-size: 24px;
+}
+.gallery_img div > p {
+	padding: 0.5rem;
+	font-weight: 500;
+	background-color: green;
+	margin-bottom: 0.2rem;
+}
+.gallery_one {
+	background: url(https://cdn.pixabay.com/photo/2019/07/15/06/27/factory-4338627_1280.jpg);
+}
+.gallery_second {
+	background: url(https://cdn.pixabay.com/photo/2022/02/11/12/12/pforphoto-7007231_1280.jpg);
+}
+.gallery_third {
+	background: url(https://cdn.pixabay.com/photo/2023/05/25/09/06/ai-generated-8016685_1280.jpg);
+}
+.infrastructure {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 600px;
+	padding: 3rem 2rem;
+	align-items: center;
+}
+.infrastructure_img {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	justify-content: space-around;
+	padding: 3rem 2rem;
+	height: 100%;
+
+	width: 100%;
+}
+.infrastructure_img div {
+	flex: 1;
+	background-position: center;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	color: white;
+	font-size: 20px;
+}
+.infrastructure_img div > p {
+	padding: 0.5rem;
+	font-weight: 500;
+	background-color: green;
+	margin-bottom: 0.2rem;
+}
+.infrastructure_one {
+	background: url(https://cdn.pixabay.com/photo/2019/07/15/06/27/factory-4338627_1280.jpg);
+}
+.infrastructure_second {
+	background: url(https://cdn.pixabay.com/photo/2022/02/11/12/12/pforphoto-7007231_1280.jpg);
+}
+.infrastructure_third {
+	background: url(https://cdn.pixabay.com/photo/2023/05/25/09/06/ai-generated-8016685_1280.jpg);
+}
+.infrastructure_four {
+	background: url(https://cdn.pixabay.com/photo/2023/04/24/09/15/ai-generated-7947639_1280.jpg);
+}
+.key {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5rem;
+	align-items: center;
+	padding: 5rem 0rem;
+}
+.key_img {
+	height: 500px;
+	width: 90%;
+}
+.key_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.client {
+	display: flex;
+	flex-direction: row;
+	padding: 3rem 0rem;
+	align-items: center;
+	background-color: #f6f3e8;
+}
+.client_head {
+	width: 40%;
+}
+.client p {
+	font-size: 36px;
+	text-align: center;
+}
+.client_img {
+	width: 60%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0.5rem;
+}
+.client_img div {
+	height: 200px;
+	width: 200px;
+	background-color: white;
+	padding: 1rem;
+}
+.client_img img {
+	width: 100%;
+	height: 100%;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+}
+.footer_one {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(6, 53, 6, 0.87);
+}
+.footer_second {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: rgb(10, 93, 10);
+}
+.footer_third p {
+	text-align: center;
+	background-color: orangered;
+}
