@@ -7,6 +7,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: poppins;
+	scrollbar-width: none;
 }
 body {
 	overflow-y: auto;
@@ -55,9 +56,9 @@ header a {
 	padding-right: 2rem;
 }
 header a:hover {
-	color: rgb(39, 208, 39);
+	color: orangered;
 }
-main .first {
+main .first,.middle {
 	width: 100%;
 	height: 100%;
 	margin-top: 4rem;
@@ -142,10 +143,9 @@ main .first {
 	margin: 2rem 1rem;
 	color: #fffdec;
 	background-color: #0d301d;
-
 }
 .about_second {
-	padding: 3rem 0rem;
+	padding: 5rem 5rem;
 }
 .about h1 {
 	font-size: 80px;
@@ -161,7 +161,7 @@ main .first {
 }
 .about p > span {
 	color: orangered;
-	font-size: 30px;
+	font-size: 24px;
 }
 .video_gallery {
 	width: 100%;
@@ -262,6 +262,7 @@ main .first {
 .infrastructure_four {
 	background: url(https://cdn.pixabay.com/photo/2023/04/24/09/15/ai-generated-7947639_1280.jpg);
 }
+
 .key {
 	display: flex;
 	flex-direction: column;
@@ -269,19 +270,19 @@ main .first {
 	gap: 1.5rem;
 	align-items: center;
 	padding: 5rem 0rem;
-}
-.key_img {
-	height: 500px;
-	width: 90%;
 	background: url(../../Img/Background/key.webp);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
+	position: relative;
+}
+.key_img {
+	height: 500px;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 	padding: 5rem 0rem;
-	position: relative;
 }
 .key_head {
 	display: flex;
@@ -290,8 +291,8 @@ main .first {
 	align-items: center;
 }
 .key_img {
-	margin-left: 10%;
-	height: 500px;
+	margin-left: 5%;
+	height: 600px;
 	width: 70%;
 }
 .key_img img {
@@ -395,7 +396,6 @@ button.next-slide {
 	flex-direction: column;
 }
 .footer_one {
-
 	text-align: center;
 	display: flex;
 	flex-direction: column;
