@@ -1,0 +1,33 @@
+.about_content{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.our_driving_force .force_content{
+
+display: flex;
+
+}
+.expertise div{
+ width: 50%;
+}
+.vision_content{
+    width: 60%;
+}
+.vision_image{
+    width: 40%;
+}
+.mission{
+    display: flex;
+    flex-direction: row;
+}
+.mission_image{
+    width: 40%;
+}
+.mission_content{
+    width: 60%;
+    text-align: left;
+}
