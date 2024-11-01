@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact</title>
+		<title>About Us</title>
 		<link rel="stylesheet" href="../Home/Home.css" />
 		<link rel="stylesheet" href="./About.css" />
 		<link
@@ -14,6 +14,7 @@
 			referrerpolicy="no-referrer" />
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="../Home/Home.js"></script>
 	</head>
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
@@ -33,19 +34,22 @@
 						<li><a href="../Product/Product.html">Product</a></li>
 						<li>
 							<a style="color: orangered; font-weight: 700" href="./About.html"
-								>About Us</a
+								>About_Us</a
 							>
 						</li>
 						<li>
-							<a href="./Contact.html">Contact</a>
+							<a href="../Contact/Contact.html">Contact</a>
 						</li>
 					</ul>
 				</div>
 			</header>
-			<div class="about_content">
-				<div>
-					<h1>About Us</h1>
-					<p>
+			<h1 class="company_name">
+				Aaptro <span> Electropolymers</span> Pvt. Ltd.
+			</h1>
+			<main class="about_content">
+				<div class="about_first" data-aos="fade-right">
+					<h1 data-aos="fade-down"><span>About</span> Us</h1>
+					<p data-aos="fade-up">
 						<span>Aaptro Electropolymers Pvt. Ltd.</span> is a growing
 						manufacturer of Injection Tool, Blow Tool, Press Tool , Jigs and
 						Fixture, Plastic injection molded products for over 2 years and has
@@ -55,32 +59,32 @@
 						technologies and capturing new opportunities through out India.
 					</p>
 				</div>
-				<div class="our_driving_force">
-					<h1>Our Driving Force</h1>
+				<div class="about_second" data-aos="fade-left">
+					<h1 data-aos="zoom-in">Our <span>Driving</span> Force</h1>
 					<div class="force_content">
-						<div>
-							<img src="" alt="" />
-							<h3>Innovation</h3>
-							<p>
+						<div data-aos="flip-left">
+							<img src="../../Img/About_us/innovation.png" alt="Innovation" />
+							<h3 data-aos="fade-up">Innovation</h3>
+							<p data-aos="fade-up">
 								Our focus is to adapt innovation to develop products that
 								satisfy the changing demand of customers. We believe in
 								continuous improvement and encourage innovation.
 							</p>
 						</div>
-						<div>
-							<img src="" alt="" />
-							<h3>Ethics</h3>
-							<p>
+						<div data-aos="flip-right">
+							<img src="../../Img/About_us/ethics.png" alt="Ethics" />
+							<h3 data-aos="fade-up">Ethics</h3>
+							<p data-aos="fade-up">
 								We prioritize integrity, transparency, and ethical conduct in
 								all aspects of our business. Our belief in ethical practices
 								ensures trust, builds strong relationships, and upholds the
 								reputation of our company.
 							</p>
 						</div>
-						<div>
-							<img src="" alt="" />
-							<h3>Sustainability</h3>
-							<p>
+						<div data-aos="flip-up">
+							<img src="../../Img/About_us/sustan.png" alt="Sustainability" />
+							<h3 data-aos="fade-up">Sustainability</h3>
+							<p data-aos="fade-up">
 								As a responsible Plastic manufacturing plant, we are committed
 								to sustainable practices. We continuously explore new processes
 								that promote energy efficiency and waste reduction.
@@ -88,16 +92,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="expertise">
-					<div>
-						<h1>Your Trusted Manufacturer with Expertise</h1>
-						<ul>
+				<div class="expertise" data-aos="zoom-in-up">
+					<h1 data-aos="fade-right">
+						<span>Your Trusted</span> Manufacturer with Expertise
+					</h1>
+					<ul>
+						<div data-aos="fade-up">
 							<li>
-								Welcome to Aaptro Electropolymers Pvt. Ltd., a leading
-								manufacturer dedicated to creating innovative and sustainable
-								storage solutions. We specialize in the design and production of
-								high-quality foldable crates that cater to a diverse range of
-								industries and applications.
+								Welcome to <span>Aaptro Electropolymers Pvt. Ltd.</span>, a
+								leading manufacturer dedicated to creating innovative and
+								sustainable storage solutions. We specialize in the design and
+								production of high-quality foldable crates that cater to a
+								diverse range of industries and applications.
 							</li>
 							<li>
 								We pride ourselves on our commitment to sustainability and
@@ -108,6 +114,8 @@
 								improve our products, ensuring they meet the highest standards
 								of performance and usability.
 							</li>
+						</div>
+						<div data-aos="fade-up" data-aos-delay="200">
 							<li>
 								We understand that our customers’ needs are diverse, which is
 								why we offer a range of customizable solutions tailored to
@@ -121,14 +129,13 @@
 								you to explore our range of products and join us in our journey
 								toward smarter and more efficient storage solutions.
 							</li>
-						</ul>
-					</div>
-					<div></div>
+						</div>
+					</ul>
 				</div>
 				<div class="vision">
-					<div class="vision_content">
-						<h1>Our Vision</h1>
-						<p>
+					<div class="vision_content" data-aos="zoom-in">
+						<h1>Our <span>Vision</span></h1>
+						<p data-aos="fade-up">
 							To become a Engineering Plastics & Precise Tool Development Skill
 							and Special Polymers with established processes. Also we can
 							handle critical and complex moulds with ease and care in Plastics
@@ -139,34 +146,51 @@
 							solutions to our customers.
 						</p>
 					</div>
-					<div class="vision_image"></div>
+					<div class="vision_image">
+						<img src="../../Img/About_us/vision.png" alt="" />
+					</div>
 				</div>
-				<div class="mission">
-					<div class="mission_image"></div>
-					<div class="mission_content">
-						<h1>Our Mission</h1>
-						<p>
+				<div class="mission" data-aos="fade-right">
+					<div class="mission_image" data-aos="zoom-in">
+						<img src="../../Img/About_us/mission.png" alt="mission" />
+					</div>
+					<div class="mission_content" data-aos="fade-up">
+						<h1>Our <span>Mission</span></h1>
+						<p data-aos="fade-up">
 							To focus on continues growth driven by core set of values acquired
 							through Operational Excellence with
 						</p>
 						<ul>
-							<li>New Technologies</li>
-							<li>Superior Customer Service</li>
-							<li>Innovation</li>
-							<li>Quality</li>
-							<li>Delivery Commitment</li>
+							<li data-aos="fade-left">New Technologies</li>
+							<li data-aos="fade-left">Superior Customer Service</li>
+							<li data-aos="fade-left">Innovation</li>
+							<li data-aos="fade-left">Quality</li>
+							<li data-aos="fade-left">Delivery Commitment</li>
 						</ul>
 					</div>
 				</div>
-				<div>
-					<h1>OGRANISATION STRUCTURE</h1>
-					<div><img src="" alt="" /></div>
+				<div class="organisation" data-aos="zoom-in">
+					<h1 data-aos="fade-right"><span>OGRANISATION</span> STRUCTURE</h1>
+					<div class="organisation_image" data-aos="fade-in">
+						<img
+							src="../../Img/About_us/structure.webp"
+							alt="OGRANISATION STRUCTURE" />
+					</div>
 				</div>
-				<div>
-					<h1>Copyright and Trademark</h1>
-					<div><img src="" alt="" /> <img src="" alt="" /></div>
+				<div class="copyright">
+					<h1 data-aos="zoom-in">Copyright and <span>Trademark</span></h1>
+					<div>
+						<img
+							class="right1"
+							src="../../Img/About_us/certificate1.jpg"
+							alt="Copyright and Trademark1" />
+						<img
+							class="right2"
+							src="../../Img/About_us/certificate2.jpg"
+							alt="" />
+					</div>
 				</div>
-			</div>
+			</main>
 			<footer>
 				<div class="footer_one">
 					<h1>CONTACT US</h1>

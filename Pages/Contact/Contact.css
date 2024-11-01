@@ -1,6 +1,3 @@
-.contant_middle {
-	margin-top: 4rem;
-}
 .contant_middle_first {
 	height: 60vh;
 	background: url(../../Img/Background/contact1.jpg);
@@ -58,7 +55,8 @@
 .mng_img img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+   
 }
 .contant_middle_third{
     display: flex;

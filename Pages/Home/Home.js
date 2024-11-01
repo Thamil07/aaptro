@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
+	AOS.init({
+		duration: 1000, // Default duration in milliseconds
+	});
+
+	let header = document.querySelector("header");
+	let hideTimeout;
+
+	function hideHeader() {
+		header.classList.add("hidden");
+	}
+
+	function showHeader() {
+		header.classList.remove("hidden");
+		clearTimeout(hideTimeout);
+		hideTimeout = setTimeout(hideHeader, 2000); // 2 seconds of inactivity to hide
+	}
+
+	// Show header on mouse move
+	document.addEventListener("mousemove", showHeader);
+
+	// Initial timer to hide header
+	hideTimeout = setTimeout(hideHeader, 2000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
 	// Select slides and slide container
 	let currentSlide = 0;
 	const slides = document.querySelectorAll(".slide-content");

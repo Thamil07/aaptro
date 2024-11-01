@@ -11,8 +11,18 @@
 			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="./Home.js"></script>
 	</head>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Initialize AOS after the DOM is fully loaded
+			AOS.init({
+				duration: 1000, // Default duration in milliseconds
+			});
+		});
+	</script>
 	<body>
 		<div class="parent">
 			<header>
@@ -30,21 +40,22 @@
 					</ul>
 				</div>
 			</header>
+			<h1 class="company_name">
+				Aaptro <span> Electropolymers</span> Pvt. Ltd.
+			</h1>
 			<main>
-				<div class="first middle">
+				<div class="first middle" data-aos="fade-up">
 					<div class="first_content">
-						<div class="video_gallery">
+						<div class="video_gallery" data-aos="zoom-in">
 							<video src="../../videos/Aaptro.mp4" autoplay loop muted></video>
 						</div>
-						<div class="heavy_duty">
-							<div class="heavy_duty_img">
-								<img
-									src="../../Img/orange_craft/Orange2.webp"
-									alt="" />
+						<div class="heavy_duty" data-aos="fade-right">
+							<div class="heavy_duty_img" data-aos="flip-left">
+								<img src="../../Img/orange_craft/Orange2.webp" alt="" />
 							</div>
-							<div class="heavy_duty_content">
+							<div class="heavy_duty_content" data-aos="fade-left">
 								<h2>Heavy-duty Folding Crates</h2>
-								<p style="font-size: 18px;">
+								<p style="font-size: 18px">
 									Innovative foldable crates designed to adapt to your storage
 									needs—strong, lightweight, and space-saving. Engineered for
 									strength and built to last. Our plastic foldable crates are
@@ -54,42 +65,42 @@
 						</div>
 					</div>
 				</div>
-				<div class="about">
-					<div class="about_one">
+				<div class="about" data-aos="fade-up">
+					<div class="about_one" data-aos="zoom-in">
 						<h1>About Us</h1>
 						<hr />
 						<a href=""> Read More</a>
 					</div>
-					<div class="about_second">
+					<div class="about_second" data-aos="fade-in">
 						<p>
 							&emsp;&emsp;<span>Aaptro Electropolymers Pvt. Ltd.</span> is a
-							growing  manufacturer of Plastic Injection moulding for over 2
+							growing manufacturer of Plastic Injection moulding for over 2
 							years and has been delivering on the promise of quality products
 							with in time.​​ <br />
-							​ &emsp;&emsp; Our success is driven by its our core team
-							and its commitment towards - Technical capability, executing with
+							​ &emsp;&emsp; Our success is driven by its our core team and its
+							commitment towards - Technical capability, executing with
 							excellence, applying innovative technologies and capturing new
 							opportunities throughout India.
 						</p>
 					</div>
 				</div>
-				<div class="key">
-					<div class="key_head">
+				<div class="key" data-aos="slide-up">
+					<div class="key_head" data-aos="fade-right">
 						<h1 style="font-size: 36px">KEY ADVANTAGES</h1>
 						<p style="font-size: 20px; font-weight: 400">
 							What we provide to our Clients
 						</p>
 					</div>
 
-					<div class="key_img">
+					<div class="key_img" data-aos="zoom-out">
 						<img
 							src="https://cdn.pixabay.com/photo/2023/10/21/18/47/boat-8332114_1280.jpg"
 							alt="" />
 					</div>
-					<div class="key_slide">
+					<div class="key_slide" data-aos="flip-up">
 						<div class="slide-container">
 							<div class="slide">
-								<div class="slide-content">
+								<div class="slide-content" data-aos="fade-up">
 									<h1>Strong credibility:</h1>
 									<p>
 										​Versatile technical excellence in all type of Plastic
@@ -99,7 +110,7 @@
 										industry.
 									</p>
 								</div>
-								<div class="slide-content">
+								<div class="slide-content" data-aos="fade-down">
 									<h1>Infrastructure & Power:</h1>
 									<p>
 										Continuous availability of Quality electricity power without
@@ -107,7 +118,7 @@
 										been to offer economic solutions to its customers.
 									</p>
 								</div>
-								<div class="slide-content">
+								<div class="slide-content" data-aos="fade-left">
 									<h1>Time Management:</h1>
 									<p>
 										Aaptro Electropolymers Pvt. Ltd. has been able to develop
@@ -127,44 +138,31 @@
 						</div>
 					</div>
 				</div>
-				<div class="client">
+				<div class="client" data-aos="zoom-in">
 					<div class="client_head">
 						<p>Working With the Best Clients and Partners</p>
 					</div>
 					<div class="client_img">
-						<div>
+						<div data-aos="flip-right">
 							<img
 								src="https://logos-world.net/wp-content/uploads/2022/12/Whirlpool-Logo.png"
 								alt="" />
 						</div>
-						<div>
+						<div data-aos="flip-left">
 							<img
 								src="https://www.partsbigboss.in/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/1/2/lucas_tvs_solenoid_switch_nano_26248621.jpg"
 								alt="" />
 						</div>
-						<div>
+						<div data-aos="flip-up">
 							<img
 								src="https://upload.wikimedia.org/wikipedia/en/9/90/Marico_Logo.svg"
 								alt="" />
 						</div>
-						<div>
-							<img
-								src="https://logos-world.net/wp-content/uploads/2022/12/Whirlpool-Logo.png"
-								alt="" />
-						</div>
-						<div>
-							<img
-								src="https://www.partsbigboss.in/media/catalog/product/cache/1/thumbnail/600x/17f82f742ffe127f42dca9de82fb58b1/1/2/lucas_tvs_solenoid_switch_nano_26248621.jpg"
-								alt="" />
-						</div>
-						<div>
-							<img
-								src="https://upload.wikimedia.org/wikipedia/en/9/90/Marico_Logo.svg"
-								alt="" />
-						</div>
+						<!-- Repeat the pattern for the rest -->
 					</div>
 				</div>
 			</main>
+
 			<footer>
 				<div class="footer_one">
 					<h1>CONTACT US</h1>
