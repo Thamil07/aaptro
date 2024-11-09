@@ -81,37 +81,54 @@ document.addEventListener("DOMContentLoaded", () => {
 	const product1 = document.querySelector(".product_1");
 	const product2 = document.querySelector(".product_2");
 	const product3 = document.querySelector(".product_3");
+	const product4 = document.querySelector(".product_4");
+	const product5 = document.querySelector(".product_5");
 
 	const foldCratesData = document.querySelector(".fold_crates_data");
+	const smartSwitchData = document.querySelector(".smart_switch_data");
+	const automatedSelfData = document.querySelector(".automated_self_data");
 	const normalCratesData = document.querySelector(".normal_crates_data");
 	const otherCratesData = document.querySelector(".other_crates_data");
 
 	// Function to hide all data sections
 	function hideAllData() {
 		foldCratesData.style.display = "none";
+		smartSwitchData.style.display = "none";
+		automatedSelfData.style.display = "none";
 		normalCratesData.style.display = "none";
 		otherCratesData.style.display = "none";
 	}
 
 	// Add click event listeners to each product div
-	if (product1 && product2 && product3) {
-		// Ensure elements are not null
+	if (product1 && product2 && product3 && product4 && product5) {
 		product1.addEventListener("click", () => {
 			hideAllData();
-			foldCratesData.style.display = "flex"; // Show foldable crates data
-			foldCratesData.scrollIntoView({ behavior: "smooth" }); // Scroll into view
+			foldCratesData.style.display = "flex";
+			foldCratesData.scrollIntoView({ behavior: "smooth" });
 		});
 
 		product2.addEventListener("click", () => {
 			hideAllData();
-			normalCratesData.style.display = "flex"; // Show normal crates data
-			normalCratesData.scrollIntoView({ behavior: "smooth" }); // Scroll into view
+			smartSwitchData.style.display = "flex";
+			smartSwitchData.scrollIntoView({ behavior: "smooth" });
 		});
 
 		product3.addEventListener("click", () => {
 			hideAllData();
-			otherCratesData.style.display = "flex"; // Show other crates data
-			otherCratesData.scrollIntoView({ behavior: "smooth" }); // Scroll into view
+			automatedSelfData.style.display = "flex";
+			automatedSelfData.scrollIntoView({ behavior: "smooth" });
+		});
+
+		product4.addEventListener("click", () => {
+			hideAllData();
+			normalCratesData.style.display = "flex";
+			normalCratesData.scrollIntoView({ behavior: "smooth" });
+		});
+
+		product5.addEventListener("click", () => {
+			hideAllData();
+			otherCratesData.style.display = "flex";
+			otherCratesData.scrollIntoView({ behavior: "smooth" });
 		});
 	} else {
 		console.error("One or more elements could not be found");
