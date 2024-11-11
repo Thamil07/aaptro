@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 	font-family: poppins;
 	scrollbar-width: none;
+
 }
 body {
 	overflow-y: auto;
@@ -403,7 +404,7 @@ button.next-slide {
 .client_img {
 	width: 60%;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	gap: 0.5rem;
 }
 .client_img div {

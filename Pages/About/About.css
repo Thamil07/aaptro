@@ -138,7 +138,7 @@
     width: 50%;
     text-align: left;
 }
-.mission_content p,ul{
+.mission_content p{
     width: 50%;
     text-align: left;
 }
@@ -166,28 +166,28 @@
     width: 100%;
 }
 .copyright{
-    padding: 2rem;
     display: flex;
     flex-direction:column;
     gap: 2rem;
 
 }
 .copyright div{
+    padding: 0.5rem;
     display: flex;
     height: 700px;
     gap: 2rem;
-    width: 100%;
+    width: 50%;
 
 
 }
-.right1 {
+.right1,.right2 {
     height: 100%;
     width: 100%;
     object-fit: cover;
 
 }
 .copyright div img{
-
+    width: 100%;
     height: 100%;
     object-fit: fill;
 }

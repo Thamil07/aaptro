@@ -45,7 +45,8 @@
 	padding-bottom: 3rem;
 }
 .crate_data div p {
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 2;
 	font-weight: 500;
 	font-family: "Noto Sans", sans-serif;
 }
@@ -54,6 +55,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 2rem;
 }
 .product_content {
 	display: grid;
@@ -70,26 +72,42 @@
 .product_content div h2 {
 	text-align: center;
 	color: orangered;
+	margin-bottom: 1rem;
 }
 .normal_crates {
-	width: 70% !important;
+	/* width: 70% !important; */
 	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(4, 1fr);
+	padding: 2rem;
+	gap: 3rem;
+	grid-template-columns: repeat(3, 1fr);
 	width: 100%;
 }
 .normal_crates div {
 	width: 100%;
+	height: 350px;
+	position: relative;
+}
+.normal_crates div::after {
+	content: "Spec:400mm X 325mm X250mm";
+	position: absolute;
+	color: orangered;
+	font-weight: 600;
+	left: 15%;
+	bottom: 0%;
+	top: 90%;
+	width: 100%;
+	height: 100%;
 }
 .normal_crates div img {
 	width: 100%;
-	height: 200px;
+	height: 100%;
 	border-radius: 20px;
 	background: #fff;
 	object-fit: contain;
 }
 .other_image {
-	width: 100%;
+	width: 90%;
+	padding: 3rem;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr) !important;
 	justify-content: center;
@@ -114,8 +132,8 @@
 	left: 50%;
 	bottom: 0%;
 	transform: translateX(-50%);
-	padding: 5px 10px;
-	color: #0f0d0d;
+	padding: 5px 0px;
+	color: green;
 	font-size: 14px;
 	border-radius: 5px;
 	opacity: 0;
@@ -178,9 +196,9 @@
 	object-fit: fill;
 }
 .product_details h1 {
-	background: rgb(3, 35, 3);
+	background: rgb(4, 49, 4);
 	border-radius: 1rem;
 	padding: 0.5rem 0.8rem;
 	color: white;
-	font-size: 24px;
+	font-size: 18px;
 }
